@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+        <div class="patterns">
+        <svg width="100%" height="100%">
+          <defs>
+            <pattern id="polka-dots" x="0" y="0"                    width="100" height="100"
+                     patternUnits="userSpaceOnUse">
+              <circle fill="#be9ddf" cx="25" cy="25" r="3"></circle>
+            </pattern>  
+              <style>
+           @import url("https://fonts.googleapis.com/css?  family=Lora:400,400i,700,700i");
+         </style>  
+          </defs>        
+          <rect x="0" y="0" width="100%" height="100%" fill="url(#polka-dots)"> </rect> 
+       <text x="50%" y="40%"  text-anchor="middle"  >
+         CREATIVE PROJECTS
+       </text>
+       </svg>
+      </div>
+
+
+      <div class="patterns" *ngFor="let courses of courses">
+        <h1>{{courses.name}}</h1>
+        <h2>{{courses.subject}}</h2>
+        <h3>{{courses.subjectt}}</h3>
+        <h1>{{courses.title}}</h1>
+        <h3>{{courses.titlee}}</h3>
+        <svg width="100%" height="40%">
+          <defs>
+            <pattern id="polka-dots" x="0" y="0"                    width="100" height="100"
+                     patternUnits="userSpaceOnUse">
+              <circle fill="#be9ddf" cx="25" cy="25" r="3"></circle>
+            </pattern>  
+              <style>
+           @import url("https://fonts.googleapis.com/css?  family=Lora:400,400i,700,700i");
+         </style>  
+          </defs>        
+          <rect x="0" y="0" width="100%" height="100%" fill="url(#polka-dots)"> </rect> 
+       <text x="1%" y="20%"  text-anchor="middle-1" class="text-1" >
+         
+       </text>
+       </svg>
+      </div>
+
+
+      <br><br><br><br>
+</body>
+</html>
+
+
+

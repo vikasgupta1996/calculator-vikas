@@ -1,0 +1,42 @@
+/* img{
+    width: 200px;
+    height: 200px;
+    margin-left: 1100px;
+    margin-top: -150px;
+    margin-bottom: 20px;
+    border:solid black 2px;
+} */
+
+.header{
+    background-color:#a1a1a4;
+}
+
+.table{
+    margin: 10px;
+}
+
+.para{
+    margin-left: 20px;
+}
+
+
+div {
+    /* border: 3px solid #4CAF50; */
+    padding: 20px;
+  }
+  
+  
+  .img2 {
+    float: right;
+    margin-right: 20px;
+    border: 2px solid black;
+  }
+
+
+  
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  

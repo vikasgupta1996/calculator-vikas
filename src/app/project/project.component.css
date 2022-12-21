@@ -1,0 +1,65 @@
+body {
+    background-color: #2b3746;
+    margin:0;
+ }
+ 
+ .patterns {
+   height: 40vh;
+ }
+ 
+ 
+ 
+ svg text {
+   font-family: font-effect-3d;
+   letter-spacing: 5px;
+   stroke: #ffa5d8;
+   font-size: 30px;
+   font-weight: 100;
+   stroke-width: 3;
+   animation: textAnimate 5s infinite alternate;
+   
+ }
+
+
+  h1{
+    color: white;
+    font-family: 'Pacifico', cursive;
+  }
+
+  h2{
+    color: #ADFF2F;
+    font-family: font-effect-3d;
+  }
+
+  h3{
+    color: #2fceff;
+    font-family: font-effect-3d; 
+  }
+
+  .patterns{
+    text-align: center;
+    margin-top: 1px;margin-bottom: 1px;
+  }
+
+
+
+
+ 
+ @keyframes textAnimate {
+   0% {
+     stroke-dasharray: 0 50%;
+     stroke-dashoffset:  20%;
+     fill:hsl(189, 68%, 75%)
+ 
+   }
+   
+   100% {
+     stroke-dasharray: 50% 0;
+     stroke-dashoffstet: -20%;
+     fill: hsla(189, 68%, 75%,0%)
+   }
+   
+ }
+
+
+ 

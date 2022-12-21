@@ -1,0 +1,246 @@
+.card-header{
+    background-color:#fed7aa ;
+    text-align: center;
+    font-size: 34px;
+  
+}
+
+.table{
+    width: 700px;
+    height: 500px;
+    margin-top: 100px;
+    margin-left: 20px;
+    padding: 20px;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+.container{
+    width: auto;
+    height: 500px;
+    margin-left: 50px;
+    margin-top: 22px;
+}
+
+
+.col-10 {
+    margin-right: 100px;
+}
+
+.col-sm-3{
+  width: 550px;
+  margin-top: 150px;
+  margin-right: 10px;
+  /* border: 1px solid black; */
+}
+
+/* .carousel{
+    height: 380px;
+    width: 570px;
+    margin-left: 800px;
+    margin-top: 450px;
+    border: 1px solid black;
+} */
+
+
+
+
+  img{
+    width: 360px;
+    height: 210px;
+    padding-left: 45px;
+    
+  }
+
+  .activate{
+    width: 560px
+  }
+
+.allone{
+  width: 600px;
+  height: 370px;
+  padding: 10px
+}
+
+
+  /* Credits: https://www.youtube.com/watch?v=-Rv1dbvM1EY&t=17s */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+
+
+/* .container {
+  width: 1100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+} */
+
+  .container:hover .card {
+    opacity: .3;
+  }
+
+  .container .card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 400px;
+    background: #0c002b;
+    margin: 30px;
+    box-shadow: 0 20px 30px #00000033;
+    overflow: hidden;
+  }
+
+    .container .card:before {
+      content: '';
+      position: absolute;
+      top: 2px;
+      left: 2px;
+      bottom: 2px;
+      width: 50%;
+      background: #ffffff1a;
+      pointer-events: none;
+    }
+    
+    .container .card .content {
+      padding: 30px;
+      text-align: center;
+      color: #fff;
+    }
+
+      .container .card .content * {
+        margin: 0;
+      }
+
+      .container .card .content a {
+        display: inline-block;
+        margin-top: 15px;
+        padding: 8px 15px;
+        background: #fff;
+        color: #0c002b;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 600;
+      }
+
+      .container .card .content h2 {
+        position: absolute;
+        right: 30px;
+        font-size: 4em;
+        font-weight: 800;
+        color: #af0e4c;
+        opacity: .1;
+        transition: .5s;
+      }
+
+        .container .card:hover .content h2 {
+          transform: translateY(-70px);
+        }
+
+      .container .card .content h3 {
+        position: relative;
+        font-size: 1.5em;
+        letter-spacing: 1px;
+        z-index: 1;
+        opacity: .5;
+        transition: .5s;
+      }
+
+      .container .card .content p {
+        position: relative;
+        font-weight: 300;
+        letter-spacing: 1px;
+        opacity: .5;
+        z-index: 1;
+      }
+
+        .container .card:hover,
+        .container .card:hover .content h2, 
+        .container .card:hover .content h3,
+        .container .card:hover .content p,
+        .container .card:hover span {
+          opacity: 1;
+        }
+
+    .container .card span {
+      position: absolute;
+      transition: .5;
+      opacity: 0;
+    }
+
+      .container .card span:nth-child(1) {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background: linear-gradient(to right, transparent, #ff1797);
+        animation: borderTop 1s linear infinite;
+      }
+
+      .container .card span:nth-child(2) {
+        top: 0;
+        right: 0;
+        width: 3px;
+        height: 100%;
+        background: linear-gradient(to bottom, transparent, #1779ff);
+        animation: borderRight 1s linear infinite;
+        animation-delay: .5s;
+      }
+
+      .container .card span:nth-child(3) {
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background: linear-gradient(to left, transparent, #1779ff);
+        animation: borderBottom 1s linear infinite;
+      }
+
+      .container .card span:nth-child(4) {
+        top: 0;
+        left: 0;
+        width: 3px;
+        height: 100%;
+        background: linear-gradient(to top, transparent, #1779ff);
+        animation: borderLeft 1s linear infinite;
+        animation-delay: .5s;
+      }
+
+
+
+      .main{
+        display: flex;
+        /* flex-direction: row; */
+        margin-bottom: 200px;
+      }
+
+      
+
+      
+
+@keyframes borderTop {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+@keyframes borderRight {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(100%); }
+}
+
+@keyframes borderBottom {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+@keyframes borderLeft {
+  0% { transform: translateY(100%); }
+  100% { transform: translateY(-100%); }
+}
+
+
